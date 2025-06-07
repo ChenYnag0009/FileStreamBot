@@ -28,11 +28,11 @@ class Telegram:
 
 class Server:
     PORT = int(env.get("PORT", 80))
-    BIND_ADDRESS = str(env.get("BIND_ADDRESS", "103.27.61.196"))
+    BIND_ADDRESS = str(env.get("BIND_ADDRESS", "43.228.85.143"))
     PING_INTERVAL = int(env.get("PING_INTERVAL", "1200"))
     HAS_SSL = str(env.get("HAS_SSL", "0").lower()) in ("1", "true", "t", "yes", "y")
     NO_PORT = str(env.get("NO_PORT", "0").lower()) in ("1", "true", "t", "yes", "y")
-    FQDN = str(env.get("FQDN", "jin.mu.sh-vpn.shop"))
+    FQDN = str(env.get("FQDN", "jin.wei.sh-vpn.shop"))
     URL = "http{}://{}{}/".format(
     "s" if HAS_SSL else "",
     FQDN,
